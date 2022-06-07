@@ -18,5 +18,13 @@ body {
         background-color: $softRed;
         padding: $internalPadding;
         border-radius: $borderRadius;
+
+        .title {
+            color: $veryPaleOrange;
+
+            .heading {
+                text-transform: capitalize;
+            }
+        }
     }
 }

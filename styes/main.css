@@ -32,4 +32,12 @@ body {
   padding: 1rem;
   border-radius: 1rem;
 }
+
+.mainContainer .one .title {
+  color: #fffaf5;
+}
+
+.mainContainer .one .title .heading {
+  text-transform: capitalize;
+}
 /*# sourceMappingURL=main.css.map */
