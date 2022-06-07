@@ -3,37 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Expenses chart component</title>
-
+  <link rel="stylesheet" href="/styes/main.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
   </style>
 </head>
 <body>
 
-  My balance
-  $921.48
+  <div class="mainContainer">
 
-  Spending - Last 7 days
+    <section class="one">
+      <div class="title">
+        <div class="heading">
+          <h1>my balance</h1>
+        </div>
+        <div class="subHeading">
+          <h1>$921.48</h1>
+        </div>
+      </div>
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo">
+      </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    </section>
 
-  Total this month
-  $478.33
+    <section class="two">
+      <div class="heading">
+        <h1>spending - last 7 days</h1>
+      </div>
+      <div class="graphContainer">
+        <div class="graph">
+          <div class="values">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="graphIllustration">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
 
-  +2.4%
-  from last month
+        </div>
+        <div class="dates">
+          <ul>
+            <li>mon</li>
+            <li>tue</li>
+            <li>wed</li>
+            <li>thu</li>
+            <li>fri</li>
+            <li>sat</li>
+            <li>sun</li>
+          </ul>
+        </div>
+      </div>
+      <div class="summaryContainer">
+        <div class="leftBox">
+          <h1>Total this month</h1>
+          <h2>$478.33</h2>
+        </div>
+        <div class="rightBox">
+          <h1>+2.4%</h1>
+          <h2>from last month</h2>
+        </div>
+      </div>
+    </section>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

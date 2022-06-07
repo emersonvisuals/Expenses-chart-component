@@ -1,0 +1,22 @@
+@import "./_variables";
+
+body {
+    background-color: $cream;
+    font-family: $fontFamily;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .one {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $softRed;
+        padding: $internalPadding;
+        border-radius: $borderRadius;
+    }
+}
