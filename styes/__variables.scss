@@ -8,6 +8,7 @@ $veryPaleOrange: hsl(33, 100%, 98%);
 
 // fonts 
 $bodyFont: 18px;
+$headerFont: 12px;
 
 // font Families
 $fontFamily: DM Sans;
@@ -24,5 +25,6 @@ $defaultWidth: 25rem;
 // headings
 @mixin headingOne {
     font-family: $fontFamily;
-    font-size: ;
+    font-size: $headerFont;
+    text-transform: capitalize;
 }
