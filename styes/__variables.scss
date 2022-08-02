@@ -17,3 +17,12 @@ $fontWeightHeavy: 700;
 // padding
 $internalPadding: 1rem;
 $borderRadius: 1rem;
+
+// width
+$defaultWidth: 25rem;
+
+// headings
+@mixin headingOne {
+    font-family: $fontFamily;
+    font-size: ;
+}

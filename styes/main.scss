@@ -12,19 +12,32 @@ body {
     flex-direction: column;
 
     .one {
-        display: flex;
+        display: flex;b
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: $softRed;
         padding: $internalPadding;
         border-radius: $borderRadius;
+        width: $defaultWidth;
+        margin: 0 0 2rem 0;
 
         .title {
             color: $veryPaleOrange;
 
             .heading {
                 text-transform: capitalize;
+                
             }
         }
+    }
+
+    .two {
+        display: flex;
+        flex-direction: column;
+        background-color: $veryPaleOrange;
+        border-radius: 1rem;
+        padding: $internalPadding;
+        width: $defaultWidth;
+
     }
 }
