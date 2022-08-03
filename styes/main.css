@@ -1,6 +1,8 @@
 body {
   background-color: #f8e9dd;
   font-family: DM Sans;
+  margin: 0;
+  padding: 0;
 }
 
 .mainContainer {
@@ -17,6 +19,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .mainContainer .one {
@@ -30,7 +35,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #ec775f;
-  padding: 1rem;
+  padding: 0 1rem;
   border-radius: 1rem;
   width: 25rem;
   margin: 0 0 2rem 0;
@@ -40,10 +45,33 @@ body {
   color: #fffaf5;
 }
 
-.mainContainer .one .title .heading {
+.mainContainer .one .title .heading h1 {
   font-family: DM Sans;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: capitalize;
+  font-weight: 400;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.mainContainer .one .title .subHeading h1 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.mainContainer .one .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainContainer .one .logo img {
+  height: auto;
+  width: 80%;
 }
 
 .mainContainer .two {
@@ -56,7 +84,142 @@ body {
           flex-direction: column;
   background-color: #fffaf5;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0 1rem;
   width: 25rem;
+}
+
+.mainContainer .two .heading {
+  font-family: DM Sans;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.mainContainer .two .graphContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContainer .two .graphContainer .values ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.mainContainer .two .graphContainer .values ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.mainContainer .two .dates ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+.mainContainer .two .dates ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color: #382314;
+}
+
+.mainContainer .two .summaryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: solid 2px #f8e9dd;
+}
+
+.mainContainer .two .summaryContainer .leftBox {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainContainer .two .summaryContainer .leftBox h1 {
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.mainContainer .two .summaryContainer .leftBox h2 {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.mainContainer .two .summaryContainer .rightBox {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainContainer .two .summaryContainer .rightBox h1 {
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.mainContainer .two .summaryContainer .rightBox h2 {
+  margin: 0.5rem 0 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */

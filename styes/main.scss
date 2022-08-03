@@ -3,6 +3,8 @@
 body {
     background-color: $cream;
     font-family: $fontFamily;
+    margin: 0;
+    padding: 0;
 }
 
 .mainContainer {
@@ -10,6 +12,9 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 
     .one {
         display: flex;
@@ -25,8 +30,28 @@ body {
             color: $veryPaleOrange;
 
             .heading {
-                @include headingOne;
-                
+
+                h1 {
+                    @include headingOne;
+                    margin: 1rem 0 0.5rem 0;
+                }
+            }
+
+            .subHeading {
+
+                h1 {
+                    margin: 0.5rem 0 1rem 0;
+                }
+            }
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            img {
+                height: auto;
+                width: 80%;
             }
         }
     }
@@ -39,5 +64,87 @@ body {
         padding: $internalPadding;
         width: $defaultWidth;
 
+        .heading {
+            @include headingTwo;
+        }
+
+        .graphContainer {
+            display: flex;
+            flex-direction: column;
+
+            .values {
+                
+                ul {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    list-style: none;
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+
+        .dates {
+            ul {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include dates;
+                }
+            }
+        }
+
+        .summaryContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: solid 2px $cream;
+
+            .leftBox {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+
+                h1 {
+                    @include headingOne;
+                    margin: 1rem 0 0.5rem 0;
+                }
+
+                h2 {
+                    margin: 0.5rem 0 1rem 0;
+                }
+            }
+
+            .rightBox {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+
+                h1 {
+                    @include headingOne;
+                    margin: 1rem 0 0.5rem 0;
+                }
+
+                h2 {
+                    margin: 0.5rem 0 1rem 0;
+                }
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@ $veryPaleOrange: hsl(33, 100%, 98%);
 
 // fonts 
 $bodyFont: 18px;
-$headerFont: 12px;
+$headerFont: 14px;
 
 // font Families
 $fontFamily: DM Sans;
@@ -16,7 +16,7 @@ $fontWeightLight: 400;
 $fontWeightHeavy: 700;
 
 // padding
-$internalPadding: 1rem;
+$internalPadding: 0 1rem;
 $borderRadius: 1rem;
 
 // width
@@ -27,4 +27,19 @@ $defaultWidth: 25rem;
     font-family: $fontFamily;
     font-size: $headerFont;
     text-transform: capitalize;
+    font-weight: $fontWeightLight;
+}
+
+@mixin headingTwo {
+    font-family: $fontFamily;
+    font-size: $bodyFont;
+    text-transform: capitalize;
+    font-weight: $fontWeightLight;
+}
+
+@mixin dates {
+    font-family: $fontFamily;
+    font-size: $headerFont;
+    font-weight: $fontWeightLight;
+    color: $darkBrown;
 }
