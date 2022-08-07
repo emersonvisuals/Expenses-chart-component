@@ -69,31 +69,40 @@ body {
         }
 
         .graphContainer {
-            display: flex;
-            flex-direction: column;
+            
 
-            .values {
+            .graph {
                 
                 ul {
                     display: flex;
+                    justify-content: space-between;
                     align-items: center;
-                    justify-content: space-around;
                     list-style: none;
-
+                    padding: 0;
+    
                     li {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        padding: 0;
+                    }
+
+                    li {
+                        content: '';
+                        width: 15px;
+                        height: 30px;
+                        background-color: $softRed;
+                        margin: 0 .5rem;
+                        
                     }
                 }
             }
         }
 
         .dates {
+
             ul {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 list-style: none;
                 padding: 0;
 
