@@ -43,3 +43,17 @@ $defaultWidth: 25rem;
     font-weight: $fontWeightLight;
     color: $darkBrown;
 }
+
+// graph
+
+@mixin graph {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: $softRed;
+    transform: translateX(0.85rem);
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+}

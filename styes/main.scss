@@ -69,48 +69,65 @@ body {
         }
 
         .graphContainer {
-            
+            display: flex;
+            flex-direction: column;
 
             .graph {
-                
+                content: '';
+                height: 1rem;
+            }
+
+            .dates {
+
                 ul {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    list-style: none;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    align-items:baseline;
+                    justify-content: baseline;
+                    margin: 0;
                     padding: 0;
-    
+                    height: auto;
+
                     li {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                    }
-
-                    li {
-                        content: '';
-                        width: 15px;
-                        height: 30px;
-                        background-color: $softRed;
-                        margin: 0 .5rem;
+                        @include dates;
                         
                     }
-                }
-            }
-        }
 
-        .dates {
+                    li.mondayGraph {
+                        @include graph;
+                        height: 30px;
+                    }
+    
+                    li.tuesdayGraph {
+                        @include graph;
+                        height: 60px;
+                    }
+    
+                    li.wednesdayGraph {
+                        @include graph;
+                        height: 90px;
+                    }
 
-            ul {
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-                padding: 0;
+                    li.thursdayGraph {
+                        @include graph;
+                        height: 70px;
+                    }
 
-                li {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    @include dates;
+                    li.fridayGraph {
+                        @include graph;
+                    }
+
+                    li.saturdayGraph {
+                        @include graph;
+                    }
+
+                    li.sundayGraph {
+                        @include graph;
+                    }
                 }
             }
         }

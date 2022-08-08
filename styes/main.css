@@ -95,52 +95,40 @@ body {
   font-weight: 400;
 }
 
-.mainContainer .two .graphContainer .graph ul {
+.mainContainer .two .graphContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style: none;
-  padding: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.mainContainer .two .graphContainer .graph ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.mainContainer .two .graphContainer .graph ul li {
+.mainContainer .two .graphContainer .graph {
   content: '';
-  width: 15px;
-  height: 30px;
-  background-color: #ec775f;
-  margin: 0 .5rem;
+  height: 1rem;
 }
 
-.mainContainer .two .dates ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
+.mainContainer .two .graphContainer .dates ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  margin: 0;
   padding: 0;
+  height: auto;
 }
 
-.mainContainer .two .dates ul li {
+.mainContainer .two .graphContainer .dates ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,6 +142,143 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #382314;
+}
+
+.mainContainer .two .graphContainer .dates ul li.mondayGraph {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ec775f;
+  -webkit-transform: translateX(0.85rem);
+          transform: translateX(0.85rem);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  height: 30px;
+}
+
+.mainContainer .two .graphContainer .dates ul li.tuesdayGraph {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ec775f;
+  -webkit-transform: translateX(0.85rem);
+          transform: translateX(0.85rem);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  height: 60px;
+}
+
+.mainContainer .two .graphContainer .dates ul li.wednesdayGraph {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ec775f;
+  -webkit-transform: translateX(0.85rem);
+          transform: translateX(0.85rem);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  height: 90px;
+}
+
+.mainContainer .two .graphContainer .dates ul li.thursdayGraph {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ec775f;
+  -webkit-transform: translateX(0.85rem);
+          transform: translateX(0.85rem);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  height: 70px;
+}
+
+.mainContainer .two .graphContainer .dates ul li.fridayGraph {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ec775f;
+  -webkit-transform: translateX(0.85rem);
+          transform: translateX(0.85rem);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.mainContainer .two .graphContainer .dates ul li.saturdayGraph {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ec775f;
+  -webkit-transform: translateX(0.85rem);
+          transform: translateX(0.85rem);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.mainContainer .two .graphContainer .dates ul li.sundayGraph {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-color: #ec775f;
+  -webkit-transform: translateX(0.85rem);
+          transform: translateX(0.85rem);
+  border-radius: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
 }
 
 .mainContainer .two .summaryContainer {
