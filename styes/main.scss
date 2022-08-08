@@ -1,4 +1,5 @@
 @import "./_variables";
+@import "./_keyframes";
 
 body {
     background-color: $cream;
@@ -15,6 +16,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    animation: fadeIn 0.5s;
 
     .one {
         display: flex;
@@ -73,61 +75,103 @@ body {
             flex-direction: column;
 
             .graph {
-                content: '';
-                height: 1rem;
-            }
-
-            .dates {
+                height: auto;
 
                 ul {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-                    grid-template-rows: 1fr 1fr;
-                    align-items:baseline;
-                    justify-content: baseline;
-                    margin: 0;
+                    grid-template-rows: 1fr;
+                    align-items: baseline;
+                    list-style: none;
                     padding: 0;
-                    height: auto;
-
+                    margin:0;
+                    transform: translateY(-1rem);
+    
                     li {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        @include dates;
-                        
+                        @include graph;
                     }
 
-                    li.mondayGraph {
-                        @include graph;
+                    li.mondayDiagram {
+                        animation: mondayDiagram 0.5s;
                         height: 30px;
                     }
-    
-                    li.tuesdayGraph {
-                        @include graph;
+
+                    li.mondayDiagram.active {
+                        background-color: $cyan;
+                    }
+
+                    li.tuesdayDiagram {
+                        animation: tuesdayDiagram 0.5s;
                         height: 60px;
                     }
-    
-                    li.wednesdayGraph {
-                        @include graph;
+
+                    li.tuesdayDiagram.active {
+                        background-color: $cyan;
+                    }
+
+                    li.wednesdayDiagram {
+                        animation: wednesdayDiagram 0.5s;
                         height: 90px;
                     }
 
-                    li.thursdayGraph {
-                        @include graph;
+                    li.wednesdayDiagram.active {
+                        background-color: $cyan;
+                    }
+                    
+                    li.thursdayDiagram {
+                        animation: thursdayDiagram 0.5s;
+                        height: 50px;
+                    }
+
+                    li.thursdayDiagram.active {
+                        background-color: $cyan;
+                    }
+
+                    li.fridayDiagram {
+                        animation: fridayDiagram 0.5s;
+                        height: 40px;
+                    }
+
+                    li.fridayDiagram.active {
+                        background-color: $cyan;
+                    }
+
+                    li.saturdayDiagram {
+                        animation: saturdayDiagram 0.5s;
                         height: 70px;
                     }
 
-                    li.fridayGraph {
-                        @include graph;
+                    li.saturdayDiagram.active {
+                        background-color: $cyan;
+                    }
+                    
+                    li.sundayDiagram {
+                        animation: sundayDiagram 0.5s;
+                        height: 50px;
                     }
 
-                    li.saturdayGraph {
-                        @include graph;
+                    li.sundayDiagram.active {
+                        background-color: $cyan;
                     }
+                }
+            }
 
-                    li.sundayGraph {
-                        @include graph;
-                    }
+        }
+
+        .dates {
+
+            ul {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                list-style: none;
+                padding: 0;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include dates;
                 }
             }
         }

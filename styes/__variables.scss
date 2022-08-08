@@ -48,12 +48,57 @@ $defaultWidth: 25rem;
 
 @mixin graph {
     content: '';
-    width: 30px;
-    height: 30px;
+    height: 0px;
+    width: 40px;
     background-color: $softRed;
-    transform: translateX(0.85rem);
     border-radius: 0.25rem;
-    display: flex;
-    align-items: baseline;
-    justify-content: baseline;
+    transform:translateX(0.5rem) translateY(1.75rem);
+    transition: 0.5s all;
+    cursor: pointer;
 }
+
+
+// animations 
+
+@mixin fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@mixin mondayDiagram {
+    0% { height: 0px; }
+    100% { height: 30px;}
+}
+
+@mixin tuesdayDiagram {
+    0% { height: 0px; }
+    100% { height: 60px;}
+}
+
+@mixin wednesdayDiagram {
+    0% { height: 0px; }
+    100% { height: 90px;}
+}
+
+@mixin thursdayDiagram {
+    0% { height: 0px; }
+    100% { height: 50px;}
+}
+
+@mixin fridayDiagram {
+    0% { height: 0px; }
+    100% { height: 40px;}
+}
+
+@mixin saturdayDiagram {
+    0% { height: 0px; }
+    100% { height: 70px;}
+}
+
+@mixin sundayDiagram {
+    0% { height: 0px; }
+    100% { height: 50px;}
+}
+
+
+
