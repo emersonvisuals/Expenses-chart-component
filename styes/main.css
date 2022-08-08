@@ -448,4 +448,273 @@ body {
 .mainContainer .two .summaryContainer .rightBox h2 {
   margin: 0.5rem 0 1rem 0;
 }
+
+@media only screen and (max-width: 600px) {
+  .mainContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    -webkit-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
+  }
+  .mainContainer .one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #ec775f;
+    padding: 0 1rem;
+    border-radius: 1rem;
+    width: 25rem;
+    margin: 0 0 2rem 0;
+    width: 85vw;
+  }
+  .mainContainer .one .title {
+    color: #fffaf5;
+  }
+  .mainContainer .one .title .heading h1 {
+    font-family: DM Sans;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 1rem 0 0.5rem 0;
+  }
+  .mainContainer .one .title .subHeading h1 {
+    margin: 0.5rem 0 1rem 0;
+  }
+  .mainContainer .one .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .mainContainer .one .logo img {
+    height: auto;
+    width: 80%;
+  }
+  .mainContainer .two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fffaf5;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    width: 25rem;
+    width: 85vw;
+  }
+  .mainContainer .two .heading {
+    font-family: DM Sans;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  .mainContainer .two .graphContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContainer .two .graphContainer .graph {
+    height: auto;
+  }
+  .mainContainer .two .graphContainer .graph ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+  .mainContainer .two .graphContainer .graph ul li {
+    content: '';
+    height: 0px;
+    width: 40px;
+    background-color: #ec775f;
+    border-radius: 0.25rem;
+    -webkit-transform: translateX(0.5rem) translateY(1.75rem);
+            transform: translateX(0.5rem) translateY(1.75rem);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    cursor: pointer;
+  }
+  .mainContainer .two .graphContainer .graph ul li.mondayDiagram {
+    -webkit-animation: mondayDiagram 0.5s;
+            animation: mondayDiagram 0.5s;
+    height: 30px;
+  }
+  .mainContainer .two .graphContainer .graph ul li.mondayDiagram.active {
+    background-color: #76b5bc;
+  }
+  .mainContainer .two .graphContainer .graph ul li.tuesdayDiagram {
+    -webkit-animation: tuesdayDiagram 0.5s;
+            animation: tuesdayDiagram 0.5s;
+    height: 60px;
+  }
+  .mainContainer .two .graphContainer .graph ul li.tuesdayDiagram.active {
+    background-color: #76b5bc;
+  }
+  .mainContainer .two .graphContainer .graph ul li.wednesdayDiagram {
+    -webkit-animation: wednesdayDiagram 0.5s;
+            animation: wednesdayDiagram 0.5s;
+    height: 90px;
+  }
+  .mainContainer .two .graphContainer .graph ul li.wednesdayDiagram.active {
+    background-color: #76b5bc;
+  }
+  .mainContainer .two .graphContainer .graph ul li.thursdayDiagram {
+    -webkit-animation: thursdayDiagram 0.5s;
+            animation: thursdayDiagram 0.5s;
+    height: 50px;
+  }
+  .mainContainer .two .graphContainer .graph ul li.thursdayDiagram.active {
+    background-color: #76b5bc;
+  }
+  .mainContainer .two .graphContainer .graph ul li.fridayDiagram {
+    -webkit-animation: fridayDiagram 0.5s;
+            animation: fridayDiagram 0.5s;
+    height: 40px;
+  }
+  .mainContainer .two .graphContainer .graph ul li.fridayDiagram.active {
+    background-color: #76b5bc;
+  }
+  .mainContainer .two .graphContainer .graph ul li.saturdayDiagram {
+    -webkit-animation: saturdayDiagram 0.5s;
+            animation: saturdayDiagram 0.5s;
+    height: 70px;
+  }
+  .mainContainer .two .graphContainer .graph ul li.saturdayDiagram.active {
+    background-color: #76b5bc;
+  }
+  .mainContainer .two .graphContainer .graph ul li.sundayDiagram {
+    -webkit-animation: sundayDiagram 0.5s;
+            animation: sundayDiagram 0.5s;
+    height: 50px;
+  }
+  .mainContainer .two .graphContainer .graph ul li.sundayDiagram.active {
+    background-color: #76b5bc;
+  }
+  .mainContainer .two .dates ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    list-style: none;
+    padding: 0;
+  }
+  .mainContainer .two .dates ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    color: #382314;
+  }
+  .mainContainer .two .summaryContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-top: solid 2px #f8e9dd;
+  }
+  .mainContainer .two .summaryContainer .leftBox {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mainContainer .two .summaryContainer .leftBox h1 {
+    font-family: DM Sans;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 1rem 0 0.5rem 0;
+  }
+  .mainContainer .two .summaryContainer .leftBox h2 {
+    margin: 0.5rem 0 1rem 0;
+  }
+  .mainContainer .two .summaryContainer .rightBox {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .mainContainer .two .summaryContainer .rightBox h1 {
+    font-family: DM Sans;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin: 1rem 0 0.5rem 0;
+  }
+  .mainContainer .two .summaryContainer .rightBox h2 {
+    margin: 0.5rem 0 1rem 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -218,3 +218,218 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .mainContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 0.5s;
+    
+        .one {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $softRed;
+            padding: $internalPadding;
+            border-radius: $borderRadius;
+            width: $defaultWidth;
+            margin: 0 0 2rem 0;
+            width: 85vw;
+    
+            .title {
+                color: $veryPaleOrange;
+    
+                .heading {
+    
+                    h1 {
+                        @include headingOne;
+                        margin: 1rem 0 0.5rem 0;
+                    }
+                }
+    
+                .subHeading {
+    
+                    h1 {
+                        margin: 0.5rem 0 1rem 0;
+                    }
+                }
+            }
+    
+            .logo {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                img {
+                    height: auto;
+                    width: 80%;
+                }
+            }
+        }
+    
+        .two {
+            display: flex;
+            flex-direction: column;
+            background-color: $veryPaleOrange;
+            border-radius: 1rem;
+            padding: $internalPadding;
+            width: $defaultWidth;
+            width: 85vw;
+    
+            .heading {
+                @include headingTwo;
+            }
+    
+            .graphContainer {
+                display: flex;
+                flex-direction: column;
+    
+                .graph {
+                    height: auto;
+    
+                    ul {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        align-items: baseline;
+                        list-style: none;
+                        padding: 0;
+                        margin:0;
+                        transform: translateY(-1rem);
+        
+                        li {
+                            @include graph;
+                        }
+    
+                        li.mondayDiagram {
+                            animation: mondayDiagram 0.5s;
+                            height: 30px;
+                        }
+    
+                        li.mondayDiagram.active {
+                            background-color: $cyan;
+                        }
+    
+                        li.tuesdayDiagram {
+                            animation: tuesdayDiagram 0.5s;
+                            height: 60px;
+                        }
+    
+                        li.tuesdayDiagram.active {
+                            background-color: $cyan;
+                        }
+    
+                        li.wednesdayDiagram {
+                            animation: wednesdayDiagram 0.5s;
+                            height: 90px;
+                        }
+    
+                        li.wednesdayDiagram.active {
+                            background-color: $cyan;
+                        }
+                        
+                        li.thursdayDiagram {
+                            animation: thursdayDiagram 0.5s;
+                            height: 50px;
+                        }
+    
+                        li.thursdayDiagram.active {
+                            background-color: $cyan;
+                        }
+    
+                        li.fridayDiagram {
+                            animation: fridayDiagram 0.5s;
+                            height: 40px;
+                        }
+    
+                        li.fridayDiagram.active {
+                            background-color: $cyan;
+                        }
+    
+                        li.saturdayDiagram {
+                            animation: saturdayDiagram 0.5s;
+                            height: 70px;
+                        }
+    
+                        li.saturdayDiagram.active {
+                            background-color: $cyan;
+                        }
+                        
+                        li.sundayDiagram {
+                            animation: sundayDiagram 0.5s;
+                            height: 50px;
+                        }
+    
+                        li.sundayDiagram.active {
+                            background-color: $cyan;
+                        }
+                    }
+                }
+    
+            }
+    
+            .dates {
+    
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    list-style: none;
+                    padding: 0;
+    
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include dates;
+                    }
+                }
+            }
+    
+            .summaryContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-top: solid 2px $cream;
+    
+                .leftBox {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items:flex-start;
+    
+                    h1 {
+                        @include headingOne;
+                        margin: 1rem 0 0.5rem 0;
+                    }
+    
+                    h2 {
+                        margin: 0.5rem 0 1rem 0;
+                    }
+                }
+    
+                .rightBox {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items:flex-start;
+    
+                    h1 {
+                        @include headingOne;
+                        margin: 1rem 0 0.5rem 0;
+                    }
+    
+                    h2 {
+                        margin: 0.5rem 0 1rem 0;
+                    }
+                }
+            }
+        }
+    }
+  }
