@@ -543,6 +543,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: auto;
   }
   .mainContainer .two .graphContainer .graph {
     height: auto;
