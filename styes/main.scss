@@ -6,6 +6,7 @@ body {
     font-family: $fontFamily;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .mainContainer {
@@ -96,6 +97,10 @@ body {
                         height: 30px;
                     }
 
+                    li.mondayDiagram:hover {
+                        @include graphHover;
+                    }
+
                     li.mondayDiagram.active {
                         background-color: $cyan;
                     }
@@ -103,6 +108,10 @@ body {
                     li.tuesdayDiagram {
                         animation: tuesdayDiagram 0.5s;
                         height: 60px;
+                    }
+
+                    li.tuesdayDiagram:hover {
+                        @include graphHover;
                     }
 
                     li.tuesdayDiagram.active {
@@ -114,6 +123,10 @@ body {
                         height: 90px;
                     }
 
+                    li.wednesdayDiagram:hover {
+                        @include graphHover;
+                    }
+
                     li.wednesdayDiagram.active {
                         background-color: $cyan;
                     }
@@ -121,6 +134,10 @@ body {
                     li.thursdayDiagram {
                         animation: thursdayDiagram 0.5s;
                         height: 50px;
+                    }
+
+                    li.thursdayDiagram:hover {
+                        @include graphHover;
                     }
 
                     li.thursdayDiagram.active {
@@ -132,6 +149,10 @@ body {
                         height: 40px;
                     }
 
+                    li.fridayDiagram:hover {
+                        @include graphHover;
+                    }
+
                     li.fridayDiagram.active {
                         background-color: $cyan;
                     }
@@ -139,6 +160,10 @@ body {
                     li.saturdayDiagram {
                         animation: saturdayDiagram 0.5s;
                         height: 70px;
+                    }
+
+                    li.saturdayDiagram:hover {
+                        @include graphHover;
                     }
 
                     li.saturdayDiagram.active {
@@ -150,89 +175,123 @@ body {
                         height: 50px;
                     }
 
+                    li.sundayDiagram:hover {
+                        @include graphHover;
+                    }
+
                     li.sundayDiagram.active {
                         background-color: $cyan;
                     }
 
                     .monP {
                         @include dates;
+                        @include data;
                         visibility: hidden;
+                        opacity: 0%;
+                        transition: .25s all;
                     }
 
                     .tueP {
                         @include dates;
+                        @include data;
                         bottom: 3.1rem;
                         visibility: hidden;
+                        opacity: 0%;
+                        transition: .25s all;
                     }
 
                     .wedP {
                         @include dates;
+                        @include data;
                         bottom: 5rem;
                         visibility: hidden;
-                    }
-
-                    .wedP {
-                        @include dates;
-                        bottom: 5rem;
-                        visibility: hidden;
+                        opacity: 0%;
+                        transition: .25s all;
                     }
 
                     .thuP {
                         @include dates;
+                        @include data;
                         bottom: 2.5rem;
                         visibility: hidden;
+                        opacity: 0%;
+                        transition: .25s all;
                     }
 
                     .friP {
                         @include dates;
+                        @include data;
                         bottom: 1.85rem;
                         visibility: hidden;
-                    }
-
-                    .friP {
-                        @include dates;
-                        bottom: 1.85rem;
-                        visibility: hidden;
+                        opacity: 0%;
+                        transition: .25s all;
                     }
                     
                     .satP {
                         @include dates;
+                        @include data;
                         bottom: 3.75rem;
                         visibility: hidden;
+                        opacity: 0%;
+                        transition: .25s all;
                     }
 
                     .sunP {
                         @include dates;
+                        @include data;
                         bottom: 2.5rem;
                         visibility: hidden;
+                        opacity: 0%;
+                        transition: .25s all;
                     }
 
                     .monP.active {
                         visibility: visible;
+                        animation: fadeIn 1s;
+                        opacity: 100%;
+                        transition: .25s all;
                     }
 
                     .tueP.active {
                         visibility: visible;
+                        transition: .5s all;
+                        opacity: 100%;
+                        transition: .25s all;
                     }
 
                     .wedP.active {
                         visibility: visible;
+                        transition: .5s all;
+                        opacity: 100%;
+                        transition: .25s all;
                     }
 
                     .thuP.active {
                         visibility: visible;
+                        transition: .5s all;
+                        opacity: 100%;
+                        transition: .25s all;
                     }
 
                     .friP.active {
                         visibility: visible;
+                        transition: .5s all;
+                        opacity: 100%;
+                        transition: .25s all;
                     }
 
                     .satP.active {
                         visibility: visible;
+                        transition: .5s all;
+                        opacity: 100%;
+                        transition: .25s all;
                     }
 
                     .sunP.active {
                         visibility: visible;
+                        transition: .5s all;
+                        opacity: 100%;
+                        transition: .25s all;
                     }
                 }
             }

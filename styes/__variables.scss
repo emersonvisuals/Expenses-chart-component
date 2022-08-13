@@ -57,18 +57,19 @@ $defaultWidth: 25rem;
     cursor: pointer;
 }
 
-@mixin dates {
+@mixin data {
+    background-color: hsl(25, 47%, 15%);
+    padding: .25rem;
+    border-radius: 0.25rem;
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.25rem;
-    bottom:1.25rem;
-    right:-.5rem;
-    background-color: black;
     color: $veryPaleOrange;
-    border-radius: .25rem;
-    @include headingOne;
+    bottom:1.25rem;
+    right: -0.25rem;
+}
+
+@mixin graphHover {
+    opacity: 75%;
+    transition: .25s all;
 }
 
 
@@ -113,6 +114,3 @@ $defaultWidth: 25rem;
     0% { height: 0px; }
     100% { height: 50px;}
 }
-
-
-

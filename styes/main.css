@@ -147,6 +147,7 @@ body {
   font-family: DM Sans;
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 .mainContainer {
@@ -291,6 +292,12 @@ body {
   height: 30px;
 }
 
+.mainContainer .two .graphContainer .graph ul li.mondayDiagram:hover {
+  opacity: 75%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
+}
+
 .mainContainer .two .graphContainer .graph ul li.mondayDiagram.active {
   background-color: #76b5bc;
 }
@@ -299,6 +306,12 @@ body {
   -webkit-animation: tuesdayDiagram 0.5s;
           animation: tuesdayDiagram 0.5s;
   height: 60px;
+}
+
+.mainContainer .two .graphContainer .graph ul li.tuesdayDiagram:hover {
+  opacity: 75%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul li.tuesdayDiagram.active {
@@ -311,6 +324,12 @@ body {
   height: 90px;
 }
 
+.mainContainer .two .graphContainer .graph ul li.wednesdayDiagram:hover {
+  opacity: 75%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
+}
+
 .mainContainer .two .graphContainer .graph ul li.wednesdayDiagram.active {
   background-color: #76b5bc;
 }
@@ -319,6 +338,12 @@ body {
   -webkit-animation: thursdayDiagram 0.5s;
           animation: thursdayDiagram 0.5s;
   height: 50px;
+}
+
+.mainContainer .two .graphContainer .graph ul li.thursdayDiagram:hover {
+  opacity: 75%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul li.thursdayDiagram.active {
@@ -331,6 +356,12 @@ body {
   height: 40px;
 }
 
+.mainContainer .two .graphContainer .graph ul li.fridayDiagram:hover {
+  opacity: 75%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
+}
+
 .mainContainer .two .graphContainer .graph ul li.fridayDiagram.active {
   background-color: #76b5bc;
 }
@@ -339,6 +370,12 @@ body {
   -webkit-animation: saturdayDiagram 0.5s;
           animation: saturdayDiagram 0.5s;
   height: 70px;
+}
+
+.mainContainer .two .graphContainer .graph ul li.saturdayDiagram:hover {
+  opacity: 75%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul li.saturdayDiagram.active {
@@ -351,260 +388,209 @@ body {
   height: 50px;
 }
 
+.mainContainer .two .graphContainer .graph ul li.sundayDiagram:hover {
+  opacity: 75%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
+}
+
 .mainContainer .two .graphContainer .graph ul li.sundayDiagram.active {
   background-color: #76b5bc;
 }
 
 .mainContainer .two .graphContainer .graph ul .monP {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
+  color: #382314;
+  background-color: #382314;
+  padding: .25rem;
+  border-radius: 0.25rem;
+  position: absolute;
+  color: #fffaf5;
+  bottom: 1.25rem;
+  right: -0.25rem;
   visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .tueP {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
+  color: #382314;
+  background-color: #382314;
+  padding: .25rem;
+  border-radius: 0.25rem;
+  position: absolute;
+  color: #fffaf5;
+  bottom: 1.25rem;
+  right: -0.25rem;
   bottom: 3.1rem;
   visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .wedP {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
-  bottom: 5rem;
-  visibility: hidden;
-}
-
-.mainContainer .two .graphContainer .graph ul .wedP {
+  color: #382314;
+  background-color: #382314;
+  padding: .25rem;
+  border-radius: 0.25rem;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
   color: #fffaf5;
-  border-radius: .25rem;
-  font-family: DM Sans;
-  font-size: 14px;
-  text-transform: capitalize;
-  font-weight: 400;
+  bottom: 1.25rem;
+  right: -0.25rem;
   bottom: 5rem;
   visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .thuP {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
+  color: #382314;
+  background-color: #382314;
+  padding: .25rem;
+  border-radius: 0.25rem;
+  position: absolute;
+  color: #fffaf5;
+  bottom: 1.25rem;
+  right: -0.25rem;
   bottom: 2.5rem;
   visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .friP {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
-  bottom: 1.85rem;
-  visibility: hidden;
-}
-
-.mainContainer .two .graphContainer .graph ul .friP {
+  color: #382314;
+  background-color: #382314;
+  padding: .25rem;
+  border-radius: 0.25rem;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
   color: #fffaf5;
-  border-radius: .25rem;
-  font-family: DM Sans;
-  font-size: 14px;
-  text-transform: capitalize;
-  font-weight: 400;
+  bottom: 1.25rem;
+  right: -0.25rem;
   bottom: 1.85rem;
   visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .satP {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
+  color: #382314;
+  background-color: #382314;
+  padding: .25rem;
+  border-radius: 0.25rem;
+  position: absolute;
+  color: #fffaf5;
+  bottom: 1.25rem;
+  right: -0.25rem;
   bottom: 3.75rem;
   visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .sunP {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
+  color: #382314;
+  background-color: #382314;
+  padding: .25rem;
+  border-radius: 0.25rem;
+  position: absolute;
+  color: #fffaf5;
+  bottom: 1.25rem;
+  right: -0.25rem;
   bottom: 2.5rem;
   visibility: hidden;
+  opacity: 0%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .monP.active {
   visibility: visible;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
+  opacity: 100%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .tueP.active {
   visibility: visible;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 100%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .wedP.active {
   visibility: visible;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 100%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .thuP.active {
   visibility: visible;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 100%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .friP.active {
   visibility: visible;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 100%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .satP.active {
   visibility: visible;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 100%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .graphContainer .graph ul .sunP.active {
   visibility: visible;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 100%;
+  -webkit-transition: .25s all;
+  transition: .25s all;
 }
 
 .mainContainer .two .dates ul {
@@ -628,20 +614,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.25rem;
-  bottom: 1.25rem;
-  right: -.5rem;
-  background-color: black;
-  color: #fffaf5;
-  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
-  text-transform: capitalize;
   font-weight: 400;
+  color: #382314;
 }
 
 .mainContainer .two .summaryContainer {
@@ -911,20 +887,10 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.25rem;
-    bottom: 1.25rem;
-    right: -.5rem;
-    background-color: black;
-    color: #fffaf5;
-    border-radius: .25rem;
     font-family: DM Sans;
     font-size: 14px;
-    text-transform: capitalize;
     font-weight: 400;
+    color: #382314;
   }
   .mainContainer .two .summaryContainer {
     display: -webkit-box;
