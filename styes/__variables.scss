@@ -57,6 +57,20 @@ $defaultWidth: 25rem;
     cursor: pointer;
 }
 
+@mixin dates {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    bottom:1.25rem;
+    right:-.5rem;
+    background-color: black;
+    color: $veryPaleOrange;
+    border-radius: .25rem;
+    @include headingOne;
+}
+
 
 // animations 
 

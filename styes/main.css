@@ -262,9 +262,9 @@ body {
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -355,6 +355,258 @@ body {
   background-color: #76b5bc;
 }
 
+.mainContainer .two .graphContainer .graph ul .monP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .tueP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 3.1rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .wedP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 5rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .wedP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 5rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .thuP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 2.5rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .friP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 1.85rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .friP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 1.85rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .satP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 3.75rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .sunP {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
+  font-family: DM Sans;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  bottom: 2.5rem;
+  visibility: hidden;
+}
+
+.mainContainer .two .graphContainer .graph ul .monP.active {
+  visibility: visible;
+}
+
+.mainContainer .two .graphContainer .graph ul .tueP.active {
+  visibility: visible;
+}
+
+.mainContainer .two .graphContainer .graph ul .wedP.active {
+  visibility: visible;
+}
+
+.mainContainer .two .graphContainer .graph ul .thuP.active {
+  visibility: visible;
+}
+
+.mainContainer .two .graphContainer .graph ul .friP.active {
+  visibility: visible;
+}
+
+.mainContainer .two .graphContainer .graph ul .satP.active {
+  visibility: visible;
+}
+
+.mainContainer .two .graphContainer .graph ul .sunP.active {
+  visibility: visible;
+}
+
 .mainContainer .two .dates ul {
   display: -ms-grid;
   display: grid;
@@ -376,10 +628,20 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  bottom: 1.25rem;
+  right: -.5rem;
+  background-color: black;
+  color: #fffaf5;
+  border-radius: .25rem;
   font-family: DM Sans;
   font-size: 14px;
+  text-transform: capitalize;
   font-weight: 400;
-  color: #382314;
 }
 
 .mainContainer .two .summaryContainer {
@@ -555,9 +817,6 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -652,10 +911,20 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    bottom: 1.25rem;
+    right: -.5rem;
+    background-color: black;
+    color: #fffaf5;
+    border-radius: .25rem;
     font-family: DM Sans;
     font-size: 14px;
+    text-transform: capitalize;
     font-weight: 400;
-    color: #382314;
   }
   .mainContainer .two .summaryContainer {
     display: -webkit-box;

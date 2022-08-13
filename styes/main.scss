@@ -81,7 +81,7 @@ body {
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                     grid-template-rows: 1fr;
-                    align-items: baseline;
+                    align-items: flex-end;
                     list-style: none;
                     padding: 0;
                     margin:0;
@@ -152,6 +152,87 @@ body {
 
                     li.sundayDiagram.active {
                         background-color: $cyan;
+                    }
+
+                    .monP {
+                        @include dates;
+                        visibility: hidden;
+                    }
+
+                    .tueP {
+                        @include dates;
+                        bottom: 3.1rem;
+                        visibility: hidden;
+                    }
+
+                    .wedP {
+                        @include dates;
+                        bottom: 5rem;
+                        visibility: hidden;
+                    }
+
+                    .wedP {
+                        @include dates;
+                        bottom: 5rem;
+                        visibility: hidden;
+                    }
+
+                    .thuP {
+                        @include dates;
+                        bottom: 2.5rem;
+                        visibility: hidden;
+                    }
+
+                    .friP {
+                        @include dates;
+                        bottom: 1.85rem;
+                        visibility: hidden;
+                    }
+
+                    .friP {
+                        @include dates;
+                        bottom: 1.85rem;
+                        visibility: hidden;
+                    }
+                    
+                    .satP {
+                        @include dates;
+                        bottom: 3.75rem;
+                        visibility: hidden;
+                    }
+
+                    .sunP {
+                        @include dates;
+                        bottom: 2.5rem;
+                        visibility: hidden;
+                    }
+
+                    .monP.active {
+                        visibility: visible;
+                    }
+
+                    .tueP.active {
+                        visibility: visible;
+                    }
+
+                    .wedP.active {
+                        visibility: visible;
+                    }
+
+                    .thuP.active {
+                        visibility: visible;
+                    }
+
+                    .friP.active {
+                        visibility: visible;
+                    }
+
+                    .satP.active {
+                        visibility: visible;
+                    }
+
+                    .sunP.active {
+                        visibility: visible;
                     }
                 }
             }
@@ -296,7 +377,6 @@ body {
                         display: grid;
                         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                         grid-template-rows: 1fr;
-                        align-items: baseline;
                         list-style: none;
                         padding: 0;
                         margin:0;
